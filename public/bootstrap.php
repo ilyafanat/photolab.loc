@@ -10,6 +10,8 @@ use Silex\Provider\TwigServiceProvider;
 
 $app = new Application();
 
+$app['environment'] = 'development';
+
 $app['config'] = require_once __DIR__ . '/../config/' . $app['environment'] . '.php';
 
 $app->register(new TwigServiceProvider(), [
