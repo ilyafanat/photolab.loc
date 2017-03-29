@@ -1,3 +1,6 @@
 /.idea/*
 /vendor/*
 /nbproject/*
+/logs/*
+/vendor/*
+/views/index.html

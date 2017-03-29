@@ -7,6 +7,7 @@ use Silex\Provider\DoctrineServiceProvider;
 use Silex\Provider\MonologServiceProvider;
 use Silex\Provider\ServiceControllerServiceProvider;
 use Silex\Provider\TwigServiceProvider;
+use Monolog\Logger;
 
 $app = new Application();
 
@@ -19,7 +20,7 @@ $app->register(new TwigServiceProvider(), [
 ]);
 
 $app->register(new MonologServiceProvider(), [
-    'monolog.logfile' => $app['config']['path']['logs'] . $context . '.log',
+    'monolog.logfile' => $app['config']['path']['logs'] . 'temp.log',
     'monolog.level' => Logger::WARNING,
     'monolog.permission' => 0777
 ]);
