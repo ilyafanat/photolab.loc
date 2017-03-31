@@ -1,11 +1,9 @@
 {
     "name": "root/photolab.loc",
-    "authors": [
-        {
-            "name": "Ilya.R",
-            "email": "ilya.r@cudev.org"
-        }
-    ],
+    "authors": [{
+        "name": "Ilya.R",
+        "email": "ilya.r@cudev.org"
+    }],
     "minimum-stability": "stable",
     "require": {
         "silex/silex": "~2.0",
